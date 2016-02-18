@@ -15,14 +15,16 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     datamifware1kwidget.cpp \
-    tagdatamainwindow.cpp
+    tagdatamainwindow.cpp \
+    test.cpp
 
 HEADERS  += mainwindow.h \
     tagdatawindow.h \
     datamifware1kwidget.h \
     tagdatamainwindow.h \
     keysarray.h \
-    keysarraymifare1k.h
+    keysarraymifare1k.h \
+    dataarray.h
 
 FORMS    += mainwindow.ui \
     datamifware1kwidget.ui \
