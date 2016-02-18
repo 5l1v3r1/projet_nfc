@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2016-02-17T19:32:11
+# Project created by QtCreator 2016-02-17T20:50:11
 #
 #-------------------------------------------------
 
@@ -16,3 +16,5 @@ SOURCES += main.cpp\
         mainwindow.cpp
 
 HEADERS  += mainwindow.h
+
+FORMS    += mainwindow.ui
