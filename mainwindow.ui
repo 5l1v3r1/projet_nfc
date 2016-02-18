@@ -324,38 +324,38 @@
     <property name="title">
      <string>Files</string>
     </property>
-    <addaction name="actionNew"/>
-    <addaction name="actionOpen"/>
-    <addaction name="actionSave"/>
-    <addaction name="actionSaveAs"/>
-    <addaction name="actionClose"/>
+    <addaction name="newAction"/>
+    <addaction name="openAction"/>
+    <addaction name="saveAction"/>
+    <addaction name="saveAsAction"/>
+    <addaction name="closeAction"/>
    </widget>
-   <widget class="QMenu" name="menuEdit">
+   <widget class="QMenu" name="editMenu">
     <property name="title">
      <string>Edit</string>
     </property>
-    <addaction name="actionAddKey"/>
-    <addaction name="actionMFOC"/>
+    <addaction name="addKeyAction"/>
+    <addaction name="mfocAction"/>
    </widget>
-   <widget class="QMenu" name="menuOptions">
+   <widget class="QMenu" name="optionsMenu">
     <property name="title">
      <string>Options</string>
     </property>
-    <addaction name="actionDefaultRepository"/>
-    <addaction name="actionFunctionsTimeOut"/>
+    <addaction name="defaultDirectoryAction"/>
+    <addaction name="timeOutAction"/>
    </widget>
-   <widget class="QMenu" name="menuAbout">
+   <widget class="QMenu" name="aboutMenu">
     <property name="title">
      <string>Help</string>
     </property>
-    <addaction name="actionAboutLibNFC"/>
-    <addaction name="actionAboutMFOC"/>
-    <addaction name="actionAboutThisSoft"/>
+    <addaction name="aboutLibnfcAction"/>
+    <addaction name="aboutMfocAction"/>
+    <addaction name="aboutThisSoftAction"/>
    </widget>
    <addaction name="menuFiles"/>
-   <addaction name="menuEdit"/>
-   <addaction name="menuOptions"/>
-   <addaction name="menuAbout"/>
+   <addaction name="editMenu"/>
+   <addaction name="optionsMenu"/>
+   <addaction name="aboutMenu"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -366,62 +366,62 @@
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
-  <action name="actionNew">
+  <action name="newAction">
    <property name="text">
     <string>New</string>
    </property>
   </action>
-  <action name="actionOpen">
+  <action name="openAction">
    <property name="text">
     <string>Open</string>
    </property>
   </action>
-  <action name="actionClose">
+  <action name="closeAction">
    <property name="text">
     <string>Close</string>
    </property>
   </action>
-  <action name="actionAddKey">
+  <action name="addKeyAction">
    <property name="text">
     <string>Add a key</string>
    </property>
   </action>
-  <action name="actionDefaultRepository">
+  <action name="defaultDirectoryAction">
    <property name="text">
-    <string>Default repository</string>
+    <string>Default directory</string>
    </property>
   </action>
-  <action name="actionFunctionsTimeOut">
+  <action name="timeOutAction">
    <property name="text">
     <string>Functions time out</string>
    </property>
   </action>
-  <action name="actionMFOC">
+  <action name="mfocAction">
    <property name="text">
     <string>MFOC</string>
    </property>
   </action>
-  <action name="actionAboutLibNFC">
+  <action name="aboutLibnfcAction">
    <property name="text">
     <string>LibNFC</string>
    </property>
   </action>
-  <action name="actionAboutMFOC">
+  <action name="aboutMfocAction">
    <property name="text">
     <string>MFOC</string>
    </property>
   </action>
-  <action name="actionAboutThisSoft">
+  <action name="aboutThisSoftAction">
    <property name="text">
     <string>NFC_flo</string>
    </property>
   </action>
-  <action name="actionSave">
+  <action name="saveAction">
    <property name="text">
     <string>Save</string>
    </property>
   </action>
-  <action name="actionSaveAs">
+  <action name="saveAsAction">
    <property name="text">
     <string>Save as</string>
    </property>

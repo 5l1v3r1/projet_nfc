@@ -13,8 +13,15 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    datamifware1kwidget.cpp \
+    tagdatamainwindow.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    tagdatawindow.h \
+    datamifware1kwidget.h \
+    tagdatamainwindow.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    datamifware1kwidget.ui \
+    tagdatamainwindow.ui
