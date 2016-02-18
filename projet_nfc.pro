@@ -20,7 +20,9 @@ SOURCES += main.cpp\
 HEADERS  += mainwindow.h \
     tagdatawindow.h \
     datamifware1kwidget.h \
-    tagdatamainwindow.h
+    tagdatamainwindow.h \
+    keysarray.h \
+    keysarraymifare1k.h
 
 FORMS    += mainwindow.ui \
     datamifware1kwidget.ui \
