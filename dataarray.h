@@ -23,7 +23,8 @@ template <typename T>
 class DataArray
 {
 public:
-    DataArray();
+    DataArray(){
+    }
 
 
     DataArray(int numberOfSectors, int *numberOfBlocks, int **lengthOfBlocks){

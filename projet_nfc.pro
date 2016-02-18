@@ -24,7 +24,8 @@ HEADERS  += mainwindow.h \
     tagdatamainwindow.h \
     keysarray.h \
     keysarraymifare1k.h \
-    dataarray.h
+    dataarray.h \
+    dataarraymifware1k.h
 
 FORMS    += mainwindow.ui \
     datamifware1kwidget.ui \
