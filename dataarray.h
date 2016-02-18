@@ -49,9 +49,14 @@ public:
 
     ~DataArray(){
         int i;
+        int j;
         for(i=0 ; i<numberSectors; i++){
+            for(j=0; j<numberBlocks[i];j++){
+                delete (*(*data)[i])[j];
+            }
             delete (*dataDetermined)[i];
             delete (*data)[i];
+            delete blocksLength[i];
         }
         delete data;
         delete dataDetermined;
@@ -104,16 +109,36 @@ public:
        return (*(*data)[sector])[block];
     }
 
-    /*
+    void addSector(int numberOfBlocksInSectorToAdd, int *lengthOfBlocksInSectorToAdd){
+        int *numberBlocksTemp = new int[numberSectors+1];
+        int **blocksLengthTemp = new int*[numberSectors+1];
+        int i;
+        int j;
+        for(i=0;i<numberSectors;i++){
+            numberBlocksTemp[i] = numberBlocks[i];
+            blocksLengthTemp[i] = new int[numberBlocks[i]];
+            for(j=0; j<numberBlocks[i];j++){
+                blocksLengthTemp[i][j]=blocksLength[i][j];
+            }
+            delete blocksLength[i];
+        }
+        numberSectors++;
+        numberBlocksTemp[numberSectors]=numberOfBlocksInSectorToAdd;
+        (*data).push_back(new QVector <T*>);
+        (*dataDetermined).push_back(new QVector <bool>);
+        for(j=0; j<numberOfBlocksInSectorToAdd;j++){
+            blocksLengthTemp[numberSectors][j]=lengthOfBlocksInSectorToAdd[j];
+            (*(*data)[numberSectors]).push_back(new T[lengthOfBlocksInSectorToAdd[j]]);
+            (*(*dataDetermined)[numberSectors]).push_back(false);
+        }
+        delete blocksLength;
+        delete numberBlocks;
 
-    T* operator[](int i)
-    {
-       return (*data)[i];
+        numberBlocks = numberBlocksTemp;
+        blocksLength = blocksLengthTemp;
+
+
     }
-
-    bool
-*/
-
 
 private :
 
