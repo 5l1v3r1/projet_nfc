@@ -9,7 +9,7 @@
 int main(int argc, char *argv[])
 {
     unsigned char c;
-    KeysArray <unsigned char> *b=new KeysArray<unsigned char>();
+    KeysArrayMifare1K *b=new KeysArrayMifare1K();
 
     unsigned char *t = new unsigned char[6];
     t[0]=63;
@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 
     b->addKey(t);
 
-    std::cout << (int) (b[0])[1];
+    std::cout << (int) (*b)[0][1];
 
     QApplication a(argc, argv);
     MainWindow w;
