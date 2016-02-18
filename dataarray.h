@@ -48,6 +48,27 @@ public:
         }
     }
 
+    void initData(int numberOfSectors, int *numberOfBlocks, int **lengthOfBlocks){
+        data = new QVector < QVector <T*>*>;
+        dataDetermined = new QVector < QVector <bool>*>;
+        numberSectors= numberOfSectors;
+        numberBlocks = new int[numberOfSectors];
+        blocksLength = new int*[numberOfSectors];
+        int i;
+        int j;
+        for(i=0;i<numberOfSectors;i++){
+            numberBlocks[i] = numberOfBlocks[i];
+            blocksLength[i] = new int[numberOfBlocks[i]];
+            (*data).push_back(new QVector <T*>);
+            (*dataDetermined).push_back(new QVector <bool>);
+            for(j=0; j<numberOfBlocks[i];j++){
+                (*(*data)[i]).push_back(new T[lengthOfBlocks[i][j]]);
+                (*(*dataDetermined)[i]).push_back(false);
+                blocksLength[i][j]=lengthOfBlocks[i][j];
+            }
+        }
+    }
+
     ~DataArray(){
         int i;
         int j;

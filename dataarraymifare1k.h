@@ -1,13 +1,12 @@
-#ifndef DATAARRAYMIFWARE1K_H
-#define DATAARRAYMIFWARE1K_H
+#ifndef DATAARRAYMIFARE1K_H
+#define DATAARRAYMIFARE1K_H
 
-#include <dataarray.h>
+#include "dataarray.h"
 
-class DataArrayMifware1K : public DataArray <unsigned char>
+class DataArrayMifare1K : public DataArray<unsigned char>
 {
 public:
-    DataArrayMifware1K() : DataArray(){
-
+    DataArrayMifare1K(){
         int i;
         int j;
 
@@ -21,8 +20,8 @@ public:
                 lengthOfBlocks[i][j]=16;
             }
         }
-        DataArray(numberOfSectors, numberOfBlocks, lengthOfBlocks);
+        initData(numberOfSectors, numberOfBlocks, lengthOfBlocks);
     }
 };
 
-#endif // DATAARRAYMIFWARE1K_H
+#endif // DATAARRAYMIFARE1K_H

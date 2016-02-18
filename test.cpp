@@ -1,6 +1,6 @@
 #include "keysarraymifare1k.h"
 #include "dataarray.h"
-#include "dataarraymifware1k.h"
+#include "dataarraymifare1k.h"
 #include <iostream>
 
 using namespace std;
@@ -100,10 +100,8 @@ void testDataArrayMifare1K(){
 
     cout << "Test of DataArrayMifare1K" << endl;
 
-    DataArrayMifware1K *d = new DataArrayMifware1K();
-    cout << "okkkkkkkkkkkkkkkkkk";
+    DataArrayMifare1K *d = new DataArrayMifare1K();
     d->setData(0,0,6,t);
-    cout << "Test of DataArrayMifare1K" << endl;
     d->setDataDetermined(0,0);
 
     cout << d->isDataDetermined(0,0) << " = " <<"true" << endl;
