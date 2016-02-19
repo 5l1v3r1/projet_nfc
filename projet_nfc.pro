@@ -13,22 +13,22 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp \
-    datamifware1kwidget.cpp \
-    tagdatamainwindow.cpp \
-    test.cpp \
-    mifare1k.cpp
+           test.cpp \
+             windows\mainwindow.cpp \
+             windows\tagdatamainwindow.cpp \
+                windows\mifare1k\datamifware1kwidget.cpp \
+             tags\mifare1k.cpp
 
-HEADERS  += mainwindow.h \
-    tagdatawindow.h \
-    datamifware1kwidget.h \
-    tagdatamainwindow.h \
-    keysarray.h \
-    keysarraymifare1k.h \
-    dataarray.h \
-    dataarraymifare1k.h \
-    mifare1k.h
+HEADERS  += data\keysarray.h \
+            data\dataarray.h \
+                data\mifare1k\keysarraymifare1k.h \
+                data\mifare1k\dataarraymifare1k.h \
+            windows\mainwindow.h \
+            windows\tagdatamainwindow.h \
+                windows\mifare1k\datamifware1kwidget.h \
+            tags\mifare1k.h
 
-FORMS    += mainwindow.ui \
-    datamifware1kwidget.ui \
-    tagdatamainwindow.ui
+FORMS    += windows\mainwindow.ui \
+            windows\tagdatamainwindow.ui\
+                windows\mifare1k\datamifware1kwidget.ui
+
