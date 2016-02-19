@@ -1,13 +1,12 @@
 #include "keysarraymifare1k.h"
 #include "dataarray.h"
 #include "dataarraymifare1k.h"
+#include "mifare1k.h"
 #include <iostream>
 
 using namespace std;
 
 void testKeysArray(){
-    int i;
-    int j;
 
     unsigned char *t = new unsigned char[6];
     t[0]=63;
@@ -26,8 +25,6 @@ void testKeysArray(){
 }
 
 void testKeysArrayMifare1K(){
-    int i;
-    int j;
 
     unsigned char *t = new unsigned char[6];
     t[0]=63;
@@ -88,7 +85,6 @@ void testDataArray(){
 
 void testDataArrayMifare1K(){
     int i;
-    int j;
 
     unsigned char *t = new unsigned char[6];
     t[0]=63;
@@ -116,6 +112,7 @@ void testDataArrayMifare1K(){
 
 void test(){
 
-    testDataArrayMifare1K();
+//    testDataArrayMifare1K();
+    Mifare1K *test = new Mifare1K("02 31 02 14");
 
 }

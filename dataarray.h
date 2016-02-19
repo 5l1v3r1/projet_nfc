@@ -162,6 +162,10 @@ public:
 
     }
 
+    int getNumberSector(){
+        return numberSectors;
+    }
+
 private :
 
     QVector < QVector <T*>* > *data;

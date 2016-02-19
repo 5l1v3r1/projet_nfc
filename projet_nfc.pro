@@ -16,7 +16,8 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     datamifware1kwidget.cpp \
     tagdatamainwindow.cpp \
-    test.cpp
+    test.cpp \
+    mifare1k.cpp
 
 HEADERS  += mainwindow.h \
     tagdatawindow.h \
@@ -25,7 +26,8 @@ HEADERS  += mainwindow.h \
     keysarray.h \
     keysarraymifare1k.h \
     dataarray.h \
-    dataarraymifare1k.h
+    dataarraymifare1k.h \
+    mifare1k.h
 
 FORMS    += mainwindow.ui \
     datamifware1kwidget.ui \
