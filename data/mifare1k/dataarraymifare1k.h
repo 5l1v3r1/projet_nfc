@@ -1,7 +1,7 @@
 #ifndef DATAARRAYMIFARE1K_H
 #define DATAARRAYMIFARE1K_H
 
-#include "dataarray.h"
+#include "data/dataarray.h"
 
 class DataArrayMifare1K : public DataArray<unsigned char>
 {

@@ -1,10 +1,10 @@
 #ifndef MIFARE1K_H
 #define MIFARE1K_H
 
-#include "keysarraymifare1k.h"
-#include "dataarraymifare1k.h"
-#include "tagdatamainwindow.h"
-#include "datamifware1kwidget.h"
+#include "data/mifare1k/keysarraymifare1k.h"
+#include "data/mifare1k/dataarraymifare1k.h"
+#include "windows/tagdatamainwindow.h"
+#include "windows/mifare1k/datamifware1kwidget.h"
 #include <QString>
 
 class Mifare1K

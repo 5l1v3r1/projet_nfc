@@ -1,7 +1,7 @@
-#include "keysarraymifare1k.h"
-#include "dataarray.h"
-#include "dataarraymifare1k.h"
-#include "mifare1k.h"
+#include "data/mifare1k/keysarraymifare1k.h"
+#include "data/dataarray.h"
+#include "data/mifare1k/dataarraymifare1k.h"
+#include "tags/mifare1k.h"
 #include <iostream>
 
 using namespace std;
