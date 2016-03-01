@@ -60,7 +60,7 @@
 #  endif
 /* _WIN32 */
 
-#  include <library\libNFC\include\nfc\nfc-types.h>
+#  include "library/libNFC/include/nfc/nfc-types.h"
 
 #  ifndef __has_attribute
 #    define __has_attribute(x) 0

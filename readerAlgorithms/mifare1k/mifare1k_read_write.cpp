@@ -1,7 +1,10 @@
-#include "mifare1k_read_write.h"
+//#include "mifare1k_read_write.h"
 #include <QLabel>
-//#include <sauvegarde.h>
+//#include "readerAlgorithms/library_include.h"
+#include "library/libNFC/include/nfc/nfc.h"
+#include "library/libNFC/utils/mifare.c"
 typedef unsigned char byte_t;
+typedef unsigned char uint8_t;
 
 static mifare_param mp;
 nfc_device* pnd;
